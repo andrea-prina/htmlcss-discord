@@ -58,7 +58,7 @@ header {
 
 }
 
-ul{
+.menu-nav{
 
     display: flex;
     justify-content: center;
@@ -102,6 +102,10 @@ ul{
     text-align: center;
 }
 
+.jumbo-content h1, .jumbo-content p {
+    color: white;
+}
+
 .jumbo-btn{
     display: flex;
     justify-content: center;
@@ -141,10 +145,6 @@ ul{
     align-items: center;
 }
 
-h2 {
-
-    margin: 20px;
-}
 
 .element-c {
 
@@ -162,34 +162,37 @@ footer {
     text-align: center;
 }
 
-#foot-elements {
-
-    margin-bottom: 20px;
-    
-}
-
 .left-element {
 
-    height: 450px;
-    flex-grow: 1;
-    background-color: #F08080;
-    border: 1px dotted darkblue;
+    width: 20%;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
 
+.left-element span {
+    margin-right: 5px;
+}
+
+.left-element div {
+    margin-top: 10px;
+}
+
+.left-element h2 {
+    color: #255EE9;
 }
 
 .right-element {
 
-    height: 450px;
-    flex-grow: 3;
+    width: 80%;
     display: flex;
 }
 
 .sub-element {
 
     height: 450px;
-    flex-grow: 1;
-    background-color: #20B2AA;
-    border: 1px dotted white;
+    width: 25%;
+
 }
 
 footer > hr{
@@ -206,3 +209,23 @@ footer > hr{
 
 }
 
+.image {
+    vertical-align: middle;
+    height: 15px;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.sub-element li{
+    text-align: left;
+    margin: 10px;
+    color: white;
+}
+
+.sub-element li:first-child{
+    font-weight: bold;
+    color: #255EE9;
+}
