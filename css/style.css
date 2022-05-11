@@ -1,4 +1,4 @@
-/* RESET */
+/* RESET & COMMONS*/
 
 * {
     margin: 0;
@@ -16,15 +16,22 @@
 
 .btn {
 
-    /* TODO Fare una classe a parte per la colorazione*/
-    /* TODO Sistemare padding */
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px 15px 10px 15px;
     margin: 10px;
 
 }
 
+.btn-color-1 {
+    background-color: #8099ec;
+    color: white;
+}
+
+.btn-color-2 {
+    background-color: #000000;
+    color: white;
+}
 
 h1 {
     margin: 20px;
@@ -85,12 +92,12 @@ header {
     justify-content: flex-end;
 }
 
-/* TODO: Sistemare background image */
+
 .jumbotron {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     margin-top: 10px;
-    padding: 20px;
+    padding: 140px 20px 120px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,44 +122,68 @@ header {
 
 .section {
     padding: 40px;
+    margin-top: 0px;
+}
+
+
+.wave {
+    opacity: 3%;
+    margin: 0;
+    padding: 0;
+}
+
+.wave-down {
+    transform: rotate(180deg);
 }
 
 .section > .container {
     max-width: 1200px;
 }
 
-/* TODO Sistemare le sezioni senza usare nth-child */
-.section:nth-child(even) {
+
+.sec-background1 {
+    background-color: white;
+}
+
+.sec-background2 {
     background-color: #F6F6F6;
 }
 
 
-.element-a {
+.sec-element-a {
 
     width: 60%;
 
 }
 
-.element-b {
+.sec-element-b {
 
     width: 40%;
 
 }
 
-#large-section > .container {
+.large-s > .container {
 
     flex-direction: column;
     align-items: center;
 }
 
 
-.element-c {
+.sec-element-c {
 
     width: 100%;
     text-align: center;
     margin-bottom: 60px;
 }
 
+.banner {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 40px;
+}
 
 /* FOOTER */
 
@@ -179,7 +210,7 @@ footer {
 }
 
 .left-element h2 {
-    color: #255EE9;
+    color: #8099ec;
 }
 
 .right-element {
@@ -204,7 +235,7 @@ footer > hr{
 
     justify-content: space-between;
     margin-top: 10px;
-    border-top: solid 1px white;
+    border-top: solid 1px #8099ec;
     padding: 20px 0 40px 0;
 
 }
@@ -227,5 +258,5 @@ footer > hr{
 
 .sub-element li:first-child{
     font-weight: bold;
-    color: #255EE9;
+    color: #8099ec;
 }
