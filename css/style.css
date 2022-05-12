@@ -130,6 +130,7 @@ header {
     opacity: 3%;
     margin: 0;
     padding: 0;
+    display: block;
 }
 
 .wave-down {
